@@ -1,20 +1,94 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <title>l3ycle's WORKADVENTURE</title>
+
+    <script>
+        window.onload = function() {
+            var path = window.location.pathname;
+            if (path.endsWith('index.html')) {
+                path = path.substr(path, path.length - 'index.html'.length);
+            }
+            var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'floor1.json';
+            document.getElementById('mapLink').href = url;
+            // document.getElementById('mapLink').innerText = url;
+        };
+    </script>
+
+    <style media="screen">
+
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+      * {
+         font-family: "Open Sans";
+      }
+
+      .frame {
+
+        margin: 20px
+
+      }
+
+      .header {
+
+        font-weight: 800;
+        font-size: 50px;
+
+      }
+
+      .content {
+
+        margin-top: 20px
+
+      }
+
+      .footer {
+
+        position: fixed;
+        text-align: center;
+
+        bottom: 10%;
+
+        font-weight: 300;
+
+        width: 100%;
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+
+  </body>
+</html>
+
+
 <html>
-    <head>
-        <script>
-            window.onload = function() {
-                var path = window.location.pathname;
-                if (path.endsWith('index.html')) {
-                    path = path.substr(path, path.length - 'index.html'.length);
-                }
-                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'floor1.json';
-                document.getElementById('mapLink').href = url;
-                document.getElementById('mapLink').innerText = url;
-            };
-        </script>
-    </head>
+
     <body>
-        This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.
-        <br/>
-        You can access this map at <a id="mapLink" href=""></a>
+
+      <div class="frame">
+
+        <div class="header">
+
+          <a href="https://workadventu.re"><img src="./src/logo.png" alt="Workadvendure"></a>.
+
+        </div>
+
+        <div class="content">
+          Come slide into <a id="mapLink" href="">l3ycle's WORKADVENTURE</a>
+        </div>
+
+        <div class="footer">
+
+          by Ben
+
+        </div>
+
+      </div>
+
     </body>
 </html>
