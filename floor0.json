@@ -25,7 +25,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"map.json#entry_stairs_from0"
+                 "value":"floor1.json#entry_stairs_from0"
                 }],
          "type":"tilelayer",
          "visible":true,
